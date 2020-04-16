@@ -1,4 +1,4 @@
-//all examples, ignore boundary checking to make it cleaner
+// all examples, ignore boundary checking to make it cleaner
 
 // 0. What and why
 // 0.1 What is functional programming?
