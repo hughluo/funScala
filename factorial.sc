@@ -132,7 +132,7 @@ def factorialFunctional(n: Int): Int = {
 }
 
 
-def higherOder(funcIn: (Int, Int) => Int): Int => Int = {
+def higherOrder(funcIn: (Int, Int) => Int): Int => Int = {
   def funcOut(end: Int): Int = {
     val xs = 1 to end
     xs.reduce(funcIn)
@@ -140,11 +140,14 @@ def higherOder(funcIn: (Int, Int) => Int): Int => Int = {
   funcOut
 }
 
-def factorialHigherOrder = higherOder(_*_)
+def factorialHigherOrder = higherOrder(_*_)
+def sumHigherOrder = higherOrder(_+_)
 
 factorialHigherOrder(5)
 
 // further reading
 // * why functional programming matters
+// * google mapreduce
+// * scala 
 // * scala course in coursera
 
