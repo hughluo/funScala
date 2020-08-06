@@ -35,7 +35,7 @@ def factorialIterative(n: Int): Int = {
 // notice here no var involved
 // instead, we use call stack to store state
 def factorialRecursive(n: Int): Int = {
-  if(n == 1) 1
+  if (n == 1) 1
   else {
     n * factorialRecursive(n - 1)
   }
